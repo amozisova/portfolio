@@ -1,0 +1,36 @@
+
+
+/* The navigation bar */
+.navbar {
+
+    
+    background: #0081A7;
+
+
+
+
+
+  }
+  
+#navbarToggler {
+    flex-grow:0;
+}
+
+
+  /* Links inside the navbar */
+  .navbar a {
+
+    color: #f2f2f2;
+
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
