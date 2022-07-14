@@ -5,42 +5,56 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles/styletest.css">
     </head>
     <body>
 
 
 
 
-        <nav class="navbar fixed-top navbar-expand">
-            <div class="container-fluid">
-    
-            <a class="navbar-brand" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <div class="container">
+              <nav class="navbar" id="menu">
+                <div class="nav-container">
+                <div id="menu-bar" onclick="menuOnClick()">
+                  <div id="bar1" class="bar"></div>
+                  <div id="bar2" class="bar"></div>
+                  <div id="bar3" class="bar"></div>
+                </div>
+                <nav class="nav" id="nav">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                  </ul>
+                </nav> 
+              </div>
+         
+              <div class="menu-bg" id="menu-bg"></div>
+            </div> 
+
+
+
+
+          <!--
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#aboutme">o mně</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#aboutme">O mně</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Dovednosti</a>
+              <a class="nav-link" href="#skills">dovednosti</a>
             </li>
     
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projekty</a>
+              <a class="nav-link" href="#projects">projekty</a>
             </li>
     
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Kontakt</a>
+              <a class="nav-link" href="#contact">kontakt</a>
             </li>
     
     
-          </ul>
+          </ul -->
          
         </div>
       </div>
@@ -50,6 +64,6 @@
 
 
         
-        <script src=""></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
