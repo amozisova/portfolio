@@ -22,7 +22,7 @@ include_once 'language.php';
 
             <div class="nav-container">
             <span class="nav-item">
-                    <a class="nav-link" href="#home"><img src="img/home_wh.jpg" alt="home icon"></a>
+                    <a class="nav-link" href="#home"><img src="img/home.jpg" alt="home icon"></a>
                 </span>
                 <span class="nav-item">
                     <a class="nav-link" href="#aboutme">o mně</a>
