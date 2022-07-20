@@ -146,7 +146,7 @@ color:#0081A7;
 }
 
 .section_title {
-  margin: 0.8rem auto;
+  margin: 1.3rem auto;
   width: auto;
 }
 
@@ -173,7 +173,6 @@ color:#0081A7;
 /*
 tabs css
 */
-
 .tab-wrapper {
   margin: 0 0.7rem;
 }
@@ -195,7 +194,6 @@ tabs css
   transition: 0.5s;
 }
 
-
 .tab-button:hover {
   background-color: #F07167;
   color: #FFFFFF;
@@ -209,14 +207,12 @@ tabs css
   background-color: white;
 }
 
-
 .tab-content {
   display: none;
   list-style: inside;
   padding: 2rem;
   color: #F07167;
   font-size: 1.4rem;
-
 }
 
 .tab-content.active {
@@ -248,21 +244,36 @@ p {
 }
 
 /* skills section */
-.skills_grid {
-display: grid;
-grid-template-columns: 1fr 3fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-
+.skills_wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
-.names {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.skill {
+  display:flex;
+  align-items: center;
+  padding: 1rem 0;
+  width: 60vw;
 }
 
+.skill_title {
+  color: #0081A7;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: right;
+  margin: 0 2rem;
+  width: 12vw;
+}
 
+.skill img {
+  width: 10vh;
+  height: auto;
+  /*min-width: 7vw;*/
+
+  /*width: 6vw;*/
+  padding: 1rem;
+}
 
 /* responsive behaviour*/
 @media screen and (max-width: 992px) {
@@ -290,6 +301,27 @@ grid-row-gap: 0px;
     display: flex;
     justify-content: center;
   }
+
+  .skill {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skill_title {
+    background-color: #E3F7FD;
+    font-size: 2.3rem;
+    text-align: center;
+    width: 95%;
+  /*margin: 1rem 0;*/
+  }
+
+  .skill img {
+    padding: 1rem;
+  }
+
 
 }
 

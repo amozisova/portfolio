@@ -139,28 +139,42 @@ include_once 'language.php';
             <div class="section_title">
                 <h1>Dovednosti</h1>
             </div>
-            <div class="skills_grid">
-            <div class="names">
-            pravidelně používám
+            <div class="skills_wrapper">
+                <div class="skill">
+                    <span class="skill_title">pravidelně používám</span>
+                    <img src="img/logos/php_logo.png" alt="PHP, MySQL logo">
+                    <img src="img/logos/html5_logo.png" alt="HTML5 logo">
+                    <img src="img/logos/css3_logo.png" alt="CSS3 logo">
+                </div>
 
-
-            <p>další technologie</p>
-
-
-            <p>knihovny</p>
-
-
-            <p>nástroje</p>
-            </div>
-
-
-            <div class="logos">
-
-            </div>
-
+                <div class="skill">
+                    <span class="skill_title">další technologie</span>
+                    <img src="img/logos/js_logo.png" alt="JavaScript logo">
+                    <img src="img/logos/sass_logo.png" alt="SASS logo">
+                </div>
+                
+                <div class="skill">
+                    <span class="skill_title">knihovny</span>
+                    <img src="img/logos/symfony_logo.png" alt="Symfony logo">
+                    <img src="img/logos/bootstrap_logo.png" alt="Bootstrap logo">
+                    <img src="img/logos/jquery_logo.png" alt="jQuery logo">
+                </div>
+             
+                <div class="skill">
+                    <span class="skill_title">nástroje</span>
+                    <img src="img/logos/xampp_logo.png" alt="XAMPP logo">
+                    <img src="img/logos/git_logo.png" alt="Git logo">
+                    <img src="img/logos/composer_logo.png" alt="Composer logo">
+                    <img src="img/logos/vscode_logo.png" alt="VSCode logo">
+                    <img src="img/logos/figma_logo.png" alt="Figma logo">
+                    <img src="img/logos/wordpress_logo.png" alt="Wordpress logo">
+                   
+                </div>
+             
             </div>
         </section>
     </div>
+
 
 
 
