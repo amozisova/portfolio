@@ -152,14 +152,14 @@ include_once 'language.php';
                     <img src="img/logos/js_logo.png" alt="JavaScript logo">
                     <img src="img/logos/sass_logo.png" alt="SASS logo">
                 </div>
-                
+
                 <div class="skill">
                     <span class="skill_title">knihovny</span>
                     <img src="img/logos/symfony_logo.png" alt="Symfony logo">
                     <img src="img/logos/bootstrap_logo.png" alt="Bootstrap logo">
                     <img src="img/logos/jquery_logo.png" alt="jQuery logo">
                 </div>
-             
+
                 <div class="skill">
                     <span class="skill_title">nástroje</span>
                     <img src="img/logos/xampp_logo.png" alt="XAMPP logo">
@@ -168,16 +168,156 @@ include_once 'language.php';
                     <img src="img/logos/vscode_logo.png" alt="VSCode logo">
                     <img src="img/logos/figma_logo.png" alt="Figma logo">
                     <img src="img/logos/wordpress_logo.png" alt="Wordpress logo">
-                   
+
                 </div>
-             
+
             </div>
         </section>
     </div>
 
+    <div class="container">
+        <section class="main" id="projects">
+            <div class="section_title">
+                <h1>Projekty</h1>
+            </div>
+            <div class="projects_wrapper">
+
+                <div class="project">
+                    <div class="project-top">
+                        <div class="project-img">
+                            <img src="img/projects/portfolio.png" alt="project thumbnail">
+                        </div>
+                        <div class="project-info">
+                            <h4>projekt Evidence pojistných událostí</h4>
+                            Vývoj webové aplikace pro evidenci pojistných událostí v třívrstvé architektuře (MVC) v technologiích:
+                            <ul>
+                                <li>PHP, MySQL</li>
+                                <li>HTML5, CSS3</li>
+                                <li>Twig, Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="tab-button">Zdrojový kód</button>
+                        <button class="tab-button">Demo</button>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-top">
+                        <div class="project-img">
+                            <img src="img/projects/portfolio.png" alt="project thumbnail">
+                        </div>
+                        <div class="project-info">
+                            <h4>Osobní webové portfolio</h4>
+                            Responzivní webové stránky v technologiích:
+                            <ul>
+                                <li>PHP, HTML5, CSS3, JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/amozisova/portfolio" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-top">
+                        <div class="project-img">
+                            <img src="img/projects/drumkit.png" alt="project thumbnail">
+                        </div>
+                        <div class="project-info">
+                            <h4>Drum kit</h4>
+                            Online sada bubnů na hraní.
+                            Moje verze projektu z <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp" target=_"blank">kurzu Angely Yu</a> k procvičení JavaScriptu a DOM manipulace.
+                            Použité technologie:
+                            <ul></ul>
+                            <li>JavaScript</li>
+                            <li>HTML5, CSS3</li>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/amozisova/drumkit" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
+                        <a href="https://amozisova.github.io/drumkit/" target="_blank"><button class="tab-button">Demo</button></a>
+                    </div>
+                </div>
 
 
 
+            </div>
+
+            <!-- second row of projects -->
+
+            <div class="projects_wrapper">
+
+                <div class="project">
+                    <div class="project-top">
+                        <div class="project-img">
+                            <img src="img/projects/portfolio.png" alt="project thumbnail">
+                        </div>
+                        <div class="project-info">
+                            <h4>projekt Evidence pojistných událostí</h4>
+                            Vývoj webové aplikace pro evidenci pojistných událostí v třívrstvé architektuře (MVC) v technologiích:
+                            <ul>
+                                <li>PHP, MySQL</li>
+                                <li>HTML5, CSS3</li>
+                                <li>Twig, Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <button class="tab-button">Zdrojový kód</button>
+                        <button class="tab-button">Demo</button>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-top">
+                        <div class="project-img">
+                            <img src="img/projects/portfolio.png" alt="project thumbnail">
+                        </div>
+                        <div class="project-info">
+                            <h4>Osobní webové portfolio</h4>
+                            Responzivní webové stránky v technologiích:
+                            <ul>
+                                <li>PHP, HTML5, CSS3, JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/amozisova/portfolio" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-top">
+                        <div class="project-img">
+                            <img src="img/projects/drumkit.png" alt="project thumbnail">
+                        </div>
+                        <div class="project-info">
+                            <h4>Drum kit</h4>
+                            Online sada bubnů na hraní.
+                            Moje verze projektu z <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp" target=_"blank">kurzu Angely Yu</a> k procvičení JavaScriptu a DOM manipulace.
+                            Použité technologie:
+                            <ul></ul>
+                            <li>JavaScript</li>
+                            <li>HTML5, CSS3</li>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/amozisova/drumkit" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
+                        <a href="https://amozisova.github.io/drumkit/" target="_blank"><button class="tab-button">Demo</button></a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </section>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

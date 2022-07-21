@@ -25,12 +25,12 @@ body {
   overflow-x: hidden;
 }
 
-/* tab links */
-.tab-content a {
-color:#0081A7;
+/* links */
+a {
+  color: #0081A7;
 }
 
-.tab-content a:hover {
+a:hover {
   color: #F07167;
 }
 
@@ -39,7 +39,7 @@ color:#0081A7;
 .container {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
- /* grid-template-rows: repeat(12, [row-start] 1fr);*/
+  /* grid-template-rows: repeat(12, [row-start] 1fr);*/
   /*grid-template-rows: repeat(12, 1fr);*/
   grid-column-gap: 0;
   grid-row-gap: 4rem;
@@ -142,11 +142,11 @@ color:#0081A7;
 /* main section */
 .main {
   grid-column: col-start 2 / 12;
- /* grid-row: row-start 1 / 8; */
+  /* grid-row: row-start 1 / 8; */
 }
 
 .section_title {
-  margin: 1.3rem auto;
+  margin: 1.2rem auto;
   width: auto;
 }
 
@@ -178,20 +178,21 @@ tabs css
 }
 
 .tabs {
-  display: flex;
-  justify-content: flex-start;
+  /*display: flex;
+  justify-content: flex-start;*/
   margin: 0.1rem 0;
 }
 
 .tab-button {
-  letter-spacing: 2px;
   border: none;
-  padding: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
   background-color: #FED9B7;
   color: #F07167;
   font-size: 1.2rem;
-  cursor: pointer;
-  transition: 0.5s;
+  letter-spacing: 1px;
+  margin: 0 0.1rem 0 0;
+  padding: 1rem;
 }
 
 .tab-button:hover {
@@ -201,6 +202,7 @@ tabs css
 
 .tab-button.active {
   background-color: #E3F7FD;
+  margin: 0 0.1rem 0 0;
 }
 
 .active {
@@ -245,13 +247,13 @@ p {
 
 /* skills section */
 .skills_wrapper {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skill {
-  display:flex;
+  display: flex;
   align-items: center;
   padding: 1rem 0;
   width: 60vw;
@@ -275,12 +277,92 @@ align-items: center;
   padding: 1rem;
 }
 
+/* projects section */
+
+.projects_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.project {
+  border: solid 1px #0081A7;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  justify-content: space-between;
+  padding: 0;
+  width: 25vw;
+}
+
+.project-top {
+  margin: 0 0 2rem 0;
+}
+
+.project-img {
+  /*width: 25vw;*/
+   height: 22vh;
+   width: 100%;
+  background: #F0F0F0;
+  text-align: center;
+  object-fit:contain;
+  overflow:hidden;
+}
+
+.project-img img {
+  width: auto;
+  height: 22vh;
+}
+
+.project-info {
+  list-style: inside;
+  padding: 0 2rem;
+  color: #F07167;
+  font-size: 1.4rem;
+}
+
+.project-info h4 {
+  color: #0081A7;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+/*.project-buttons button {
+  /*letter-spacing: 2px;
+  border: none;
+  padding: 1rem;
+  background-color: #FED9B7;
+  color: #F07167;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.project-buttons button:hover {
+  background-color: #F07167;
+  color: #FFFFFF;
+}*/
+
+.project-buttons {
+  margin: 1rem 0 0;
+ /* text-align: center;*/
+}
+
+
 /* responsive behaviour*/
 @media screen and (max-width: 992px) {
 
   .intro {
     grid-column: col-start 2 / 12;
-   /* grid-row: row-start 3 / 6;*/
+    /* grid-row: row-start 3 / 6;*/
+  }
+
+  .section_title {
+    margin: 1.6rem auto 1rem;
+    width: auto;
   }
 
   .subtitle {
@@ -294,7 +376,7 @@ align-items: center;
   }
 
   .arrow {
-    margin: 0 auto;
+    margin: 1rem auto 0;
   }
 
   .tabs {
@@ -309,17 +391,27 @@ align-items: center;
     align-items: center;
     justify-content: center;
   }
-  
+
   .skill_title {
     background-color: #E3F7FD;
     font-size: 2.3rem;
+    margin: 0 0 1rem 0;
     text-align: center;
     width: 95%;
-  /*margin: 1rem 0;*/
   }
 
   .skill img {
     padding: 1rem;
+  }
+
+  .projects_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 60vw;
   }
 
 
