@@ -28,6 +28,7 @@ body {
 /* links */
 a {
   color: #0081A7;
+  text-decoration: none;
 }
 
 a:hover {
@@ -91,6 +92,7 @@ a:hover {
 
 .nav-item a:hover {
   background: #F07167;
+  color:#f2f2f2;
 }
 
 
@@ -317,7 +319,7 @@ p {
 }
 
 .project-info {
-  list-style: inside;
+  /*list-style: inside;*/
   padding: 0 2rem;
   color: #F07167;
   font-size: 1.4rem;
@@ -329,6 +331,24 @@ p {
   font-weight: bold;
   margin: 1rem 0;
 }
+
+.project-info ul {
+  padding: 0 2rem;
+}
+
+/*
+.project-info li::before {
+  
+  content: "\2022";
+  color: #F07167;  
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; /* Also needed for space (tweak if needed) 
+  
+}
+*/
+
+
 
 /*.project-buttons button {
   /*letter-spacing: 2px;

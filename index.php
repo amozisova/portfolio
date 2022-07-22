@@ -65,9 +65,9 @@ include_once 'language.php';
                 <div class="subheading">
                     <h3>Programátorka, která čeká na svou příležitost.</h3>
                     <div class="contactIcons">
-                        <img src="img/icons/message.png" alt="message icon">
-                        <img src="img/icons/github.png" alt="GitHub icon">
-                        <img src="img/icons/linkedin-logo.png" alt="LinkedIn icon">
+                    <a href="mailto:amozisova@gmail.com"><img src="img/icons/message.png" alt="message icon"></a>
+                        <a href="https://github.com/amozisova" target="_blank"><img src="img/icons/github.png" alt="GitHub icon"></a>
+                        <a href="http://www.linkedin.com/in/mozisa" target="_blank"><img src="img/icons/linkedin-logo.png" alt="LinkedIn icon"></a>
                     </div>
                 </div>
 
@@ -189,7 +189,7 @@ include_once 'language.php';
                         </div>
                         <div class="project-info">
                             <h4>projekt Evidence pojistných událostí</h4>
-                            Vývoj webové aplikace pro evidenci pojistných událostí v třívrstvé architektuře (MVC) v technologiích:
+                            <p>Vývoj webové aplikace pro evidenci pojistných událostí v třívrstvé architektuře (MVC) v technologiích:</p>
                             <ul>
                                 <li>PHP, MySQL</li>
                                 <li>HTML5, CSS3</li>
@@ -210,9 +210,14 @@ include_once 'language.php';
                         </div>
                         <div class="project-info">
                             <h4>Osobní webové portfolio</h4>
-                            Responzivní webové stránky v technologiích:
+                            <p>Responzivní webové stránky v technologiích:</p>
                             <ul>
-                                <li>PHP, HTML5, CSS3, JavaScript</li>
+                                <li>PHP</li>
+                                <li>HTML5, CSS3</li>
+                                <ul>
+                                    <li>CSS Grid, CSS Flexbox</li>
+                                </ul>
+                                <li>JavaScript</li>
                             </ul>
                         </div>
                     </div>
@@ -228,12 +233,13 @@ include_once 'language.php';
                         </div>
                         <div class="project-info">
                             <h4>Drum kit</h4>
-                            Online sada bubnů na hraní.
-                            Moje verze projektu z <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp" target=_"blank">kurzu Angely Yu</a> k procvičení JavaScriptu a DOM manipulace.
-                            Použité technologie:
-                            <ul></ul>
+                            <p>Online sada bubnů na hraní.</p>
+                            <p>Moje verze projektu z <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp" target=_"blank">kurzu Angely Yu</a> k procvičení JavaScriptu a DOM manipulace.</p>
+                            <p>Použité technologie:</p>
+                            <ul>
                             <li>JavaScript</li>
                             <li>HTML5, CSS3</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="project-buttons">
@@ -253,39 +259,47 @@ include_once 'language.php';
                 <div class="project">
                     <div class="project-top">
                         <div class="project-img">
-                            <img src="img/projects/portfolio.png" alt="project thumbnail">
+                            <img src="img/projects/order.png" alt="project thumbnail">
                         </div>
                         <div class="project-info">
-                            <h4>projekt Evidence pojistných událostí</h4>
-                            Vývoj webové aplikace pro evidenci pojistných událostí v třívrstvé architektuře (MVC) v technologiích:
+                            <h4>Frontend Mentor challenge: Order summary component</h4>
+                            Mé zpracování designu objednávky dle zadání <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a>.
+                            <p>Použité technologie:</p>
                             <ul>
-                                <li>PHP, MySQL</li>
-                                <li>HTML5, CSS3</li>
-                                <li>Twig, Bootstrap</li>
+                            <li>HTML5, CSS3</li>
+                                <ul>
+                                    <li>CSS Grid, CSS Flexbox</li>
+                                    <li>Mobile-first</li>
+                                </ul>
                             </ul>
                         </div>
                     </div>
                     <div class="project-buttons">
-                        <button class="tab-button">Zdrojový kód</button>
-                        <button class="tab-button">Demo</button>
+                    <a href="https://github.com/amozisova/order-summary-FMchallenge" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
+                    <a href="https://www.frontendmentor.io/solutions/order-summary-card-mobilefirst-6FT1wc-Df" target="_blank"><button class="tab-button">Demo</button></a>
                     </div>
                 </div>
 
                 <div class="project">
                     <div class="project-top">
                         <div class="project-img">
-                            <img src="img/projects/portfolio.png" alt="project thumbnail">
+                            <img src="img/projects/qr.jpg" alt="project thumbnail">
                         </div>
                         <div class="project-info">
-                            <h4>Osobní webové portfolio</h4>
-                            Responzivní webové stránky v technologiích:
+                            <h4>Frontend Mentor challenge: QR code component</h4>
+                            Mé zpracování designu QR kódu dle zadání <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a>.
+                            <p>Použité technologie:</p>
                             <ul>
-                                <li>PHP, HTML5, CSS3, JavaScript</li>
+                                <li>HTML5, CSS3</li>
+                                <ul>
+                                    <li>CSS Grid</li>
+                                </ul>
                             </ul>
                         </div>
                     </div>
                     <div class="project-buttons">
-                        <a href="https://github.com/amozisova/portfolio" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
+                    <a href="https://github.com/amozisova/Frontend-Mentor---QR-code-component" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
+                    <a href="https://www.frontendmentor.io/solutions/qr-code-component-using-css-grid-GNvblQ89S" target="_blank"><button class="tab-button">Demo</button></a>
                     </div>
                 </div>
 
@@ -295,13 +309,13 @@ include_once 'language.php';
                             <img src="img/projects/drumkit.png" alt="project thumbnail">
                         </div>
                         <div class="project-info">
-                            <h4>Drum kit</h4>
-                            Online sada bubnů na hraní.
-                            Moje verze projektu z <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp" target=_"blank">kurzu Angely Yu</a> k procvičení JavaScriptu a DOM manipulace.
-                            Použité technologie:
-                            <ul></ul>
+                            <h4>-doplnit-</h4>
+                            
+                            <p>Použité technologie:</p>
+                            <ul>
                             <li>JavaScript</li>
                             <li>HTML5, CSS3</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="project-buttons">
