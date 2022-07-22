@@ -65,7 +65,7 @@ include_once 'language.php';
                 <div class="subheading">
                     <h3>Programátorka, která čeká na svou příležitost.</h3>
                     <div class="contactIcons">
-                    <a href="mailto:amozisova@gmail.com"><img src="img/icons/message.png" alt="message icon"></a>
+                        <a href="mailto:amozisova@gmail.com"><img src="img/icons/message.png" alt="message icon"></a>
                         <a href="https://github.com/amozisova" target="_blank"><img src="img/icons/github.png" alt="GitHub icon"></a>
                         <a href="http://www.linkedin.com/in/mozisa" target="_blank"><img src="img/icons/linkedin-logo.png" alt="LinkedIn icon"></a>
                     </div>
@@ -237,8 +237,8 @@ include_once 'language.php';
                             <p>Moje verze projektu z <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp" target=_"blank">kurzu Angely Yu</a> k procvičení JavaScriptu a DOM manipulace.</p>
                             <p>Použité technologie:</p>
                             <ul>
-                            <li>JavaScript</li>
-                            <li>HTML5, CSS3</li>
+                                <li>JavaScript</li>
+                                <li>HTML5, CSS3</li>
                             </ul>
                         </div>
                     </div>
@@ -266,7 +266,7 @@ include_once 'language.php';
                             Mé zpracování designu objednávky dle zadání <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a>.
                             <p>Použité technologie:</p>
                             <ul>
-                            <li>HTML5, CSS3</li>
+                                <li>HTML5, CSS3</li>
                                 <ul>
                                     <li>CSS Grid, CSS Flexbox</li>
                                     <li>Mobile-first</li>
@@ -275,15 +275,15 @@ include_once 'language.php';
                         </div>
                     </div>
                     <div class="project-buttons">
-                    <a href="https://github.com/amozisova/order-summary-FMchallenge" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
-                    <a href="https://www.frontendmentor.io/solutions/order-summary-card-mobilefirst-6FT1wc-Df" target="_blank"><button class="tab-button">Demo</button></a>
+                        <a href="https://github.com/amozisova/order-summary-FMchallenge" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
+                        <a href="https://www.frontendmentor.io/solutions/order-summary-card-mobilefirst-6FT1wc-Df" target="_blank"><button class="tab-button">Demo</button></a>
                     </div>
                 </div>
 
                 <div class="project">
                     <div class="project-top">
                         <div class="project-img">
-                            <img src="img/projects/qr.jpg" alt="project thumbnail">
+                            <img src="img/projects/qr-th.jpg" alt="project thumbnail">
                         </div>
                         <div class="project-info">
                             <h4>Frontend Mentor challenge: QR code component</h4>
@@ -298,8 +298,8 @@ include_once 'language.php';
                         </div>
                     </div>
                     <div class="project-buttons">
-                    <a href="https://github.com/amozisova/Frontend-Mentor---QR-code-component" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
-                    <a href="https://www.frontendmentor.io/solutions/qr-code-component-using-css-grid-GNvblQ89S" target="_blank"><button class="tab-button">Demo</button></a>
+                        <a href="https://github.com/amozisova/Frontend-Mentor---QR-code-component" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
+                        <a href="https://www.frontendmentor.io/solutions/qr-code-component-using-css-grid-GNvblQ89S" target="_blank"><button class="tab-button">Demo</button></a>
                     </div>
                 </div>
 
@@ -310,11 +310,11 @@ include_once 'language.php';
                         </div>
                         <div class="project-info">
                             <h4>-doplnit-</h4>
-                            
+
                             <p>Použité technologie:</p>
                             <ul>
-                            <li>JavaScript</li>
-                            <li>HTML5, CSS3</li>
+                                <li>JavaScript</li>
+                                <li>HTML5, CSS3</li>
                             </ul>
                         </div>
                     </div>
@@ -323,13 +323,57 @@ include_once 'language.php';
                         <a href="https://amozisova.github.io/drumkit/" target="_blank"><button class="tab-button">Demo</button></a>
                     </div>
                 </div>
-
-
-
             </div>
+        </section>
+    </div>
+
+    <!-- contact -->
+    <div class="container">
+        <section class="main" id="contact">
+            <div class="section_title">
+                <h1>Kontakt</h1>
+            </div>
+            <div class="contacts_content">
+
+                <div class="contactIcons">
+                    <a href="mailto:amozisova@gmail.com"><img src="img/icons/message.png" alt="message icon"></a>
+                    <a href="https://github.com/amozisova" target="_blank"><img src="img/icons/github.png" alt="GitHub icon"></a>
+                    <a href="http://www.linkedin.com/in/mozisa" target="_blank"><img src="img/icons/linkedin-logo.png" alt="LinkedIn icon"></a>
+                </div>
+                <div class="wrapper">
+                    <header class="contact_title">
+                        <h3>Zanechte mi zprávu</h3>
+                    </header>
+                    <div class="contactbox">
+
+                    <form method="POST" action="">
+                        <label for="name">Vaše jméno:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                            <label for="surname">Vaše příjmení:</label>
+                            <input type="text" id="surname" name="surname" required>
+                        
+                            <label for="email">Váš e-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                        
+             
+                            <label for="subject">Předmět:</label>
+                            <input type="text" id="subject" name="subject" required>
+                       
+                        
+                        <label for="message">Vaše zpráva:</label>
+                        <textarea id="message" name="message" rows="8" cols="50" required>
+                        </textarea>
+
+                        <button type="submit" class="form_button tab-button">Odeslat</button>
+
+                    </form>
 
 
 
+                    </div>
+                </header>
+            </div>
         </section>
     </div>
 

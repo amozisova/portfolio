@@ -96,8 +96,9 @@ a:hover {
 }
 
 
-
-/* intro section */
+/* 
+intro section 
+*/
 .intro {
   grid-column: col-start 2 / 12;
   grid-row: row-start 4 / 7;
@@ -186,7 +187,7 @@ tabs css
 }
 
 .tab-button {
-  border: none;
+  border: 0;
   cursor: pointer;
   transition: 0.5s;
   background-color: #FED9B7;
@@ -195,6 +196,7 @@ tabs css
   letter-spacing: 1px;
   margin: 0 0.1rem 0 0;
   padding: 1rem;
+  box-shadow: 0px 0px 3px 2px #E3F7FD;
 }
 
 .tab-button:hover {
@@ -271,16 +273,12 @@ p {
 }
 
 .skill img {
-  width: 10vh;
   height: auto;
-  /*min-width: 7vw;*/
-
-  /*width: 6vw;*/
+  width: 10vh;
   padding: 1rem;
 }
 
 /* projects section */
-
 .projects_wrapper {
   display: flex;
   flex-direction: row;
@@ -290,10 +288,14 @@ p {
 }
 
 .project {
-  border: solid 1px #0081A7;
+  border: solid 1px;
+  border-image: 
+    linear-gradient(
+      297.57deg, #0081A7 2.73%, #E3F7FD 98.45%
+    ) 20%;
+  box-shadow: 0px 1px 10px 1px #E3F7FD;
   display: flex;
   flex-direction: column;
-  /*align-items: center;*/
   justify-content: space-between;
   padding: 0;
   width: 25vw;
@@ -304,9 +306,8 @@ p {
 }
 
 .project-img {
-  /*width: 25vw;*/
-   height: 22vh;
-   width: 100%;
+  height: 22vh;
+  width: 100%;
   background: #F0F0F0;
   text-align: center;
   object-fit:contain;
@@ -314,8 +315,8 @@ p {
 }
 
 .project-img img {
-  width: auto;
   height: 22vh;
+  width: auto;
 }
 
 .project-info {
@@ -336,41 +337,78 @@ p {
   padding: 0 2rem;
 }
 
-/*
-.project-info li::before {
-  
-  content: "\2022";
-  color: #F07167;  
-  font-weight: bold; 
-  display: inline-block; 
-  width: 1em; /* Also needed for space (tweak if needed) 
-  
-}
-*/
-
-
-
-/*.project-buttons button {
-  /*letter-spacing: 2px;
-  border: none;
-  padding: 1rem;
-  background-color: #FED9B7;
-  color: #F07167;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.project-buttons button:hover {
-  background-color: #F07167;
-  color: #FFFFFF;
-}*/
-
 .project-buttons {
   margin: 1rem 0 0;
  /* text-align: center;*/
 }
 
+/*
+contact section
+*/
+
+.contacts_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.contactbox {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px 1px #0081A7;
+  color: #F07167;
+  margin: 0;
+  padding: 4vh 10vw 1.5vh 1.5vw;
+  width: 50vw;
+}
+
+form {
+  display: grid;
+  grid-gap : 1rem 0;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 3fr 1fr;
+}
+
+input, textarea {
+  background : #F0F0F0;
+  border-radius: 5px;
+  border: solid 1px #E3F7FD;
+  font: inherit;
+  resize: none;
+}
+
+input:valid {
+  border: solid 2px #FED9B7;
+}
+
+input:focus, textarea:focus {
+  background: #E3F7FD;
+  border: solid 1px #0081A7;
+  outline: none;
+}
+
+label {
+  align-self: center;
+  font-size: 1.4rem;
+}
+
+
+.form_button {
+  grid-row: 6/6; 
+  grid-column: 2/2;
+  align-self: center;
+  justify-self: center;
+  width: auto;
+}
+
+.wrapper {
+  margin: 2rem;
+}
+
+.contact_title {
+color: #0081A7;
+font-size: 1.4rem;
+}
 
 /* responsive behaviour*/
 @media screen and (max-width: 992px) {
@@ -431,7 +469,7 @@ p {
   }
 
   .project {
-    width: 60vw;
+    width: 70vw;
   }
 
 
