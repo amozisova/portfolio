@@ -1,5 +1,6 @@
 <?php
 include_once 'language.php';
+include_once 'email.php';
 ?>
 
 <!DOCTYPE html>
@@ -333,46 +334,47 @@ include_once 'language.php';
             <div class="section_title">
                 <h1>Kontakt</h1>
             </div>
-            <div class="contacts_content">
+            <div class="contacts_wrapper">
 
                 <div class="contactIcons">
                     <a href="mailto:amozisova@gmail.com"><img src="img/icons/message.png" alt="message icon"></a>
                     <a href="https://github.com/amozisova" target="_blank"><img src="img/icons/github.png" alt="GitHub icon"></a>
                     <a href="http://www.linkedin.com/in/mozisa" target="_blank"><img src="img/icons/linkedin-logo.png" alt="LinkedIn icon"></a>
                 </div>
-                <div class="wrapper">
+                <div class="contact_form">
+
+
                     <header class="contact_title">
                         <h3>Zanechte mi zprávu</h3>
                     </header>
+
+                    <div class="error" id="status">
+                        <?php
+                        echo $formStatus ? $formStatus : '';
+                        ?>
+                    </div>
+
                     <div class="contactbox">
 
-                    <form method="POST" action="">
-                        <label for="name">Vaše jméno:</label>
-                        <input type="text" id="name" name="name" required>
-                        
-                            <label for="surname">Vaše příjmení:</label>
-                            <input type="text" id="surname" name="surname" required>
-                        
+                        <form method="POST" action="email.php" id="contact-form">
+                            <label for="name">Vaše jméno:</label>
+                            <input type="text" id="name" name="name" required>
+
                             <label for="email">Váš e-mail:</label>
                             <input type="email" id="email" name="email" required>
-                        
-             
+
                             <label for="subject">Předmět:</label>
                             <input type="text" id="subject" name="subject" required>
-                       
-                        
-                        <label for="message">Vaše zpráva:</label>
-                        <textarea id="message" name="message" rows="8" cols="50" required>
-                        </textarea>
 
-                        <button type="submit" class="form_button tab-button">Odeslat</button>
+                            <label for="message">Vaše zpráva:</label>
+                            <textarea id="message" name="message" rows="8" cols="50" required></textarea>
 
-                    </form>
+                            <button type="submit" class="form_button tab-button">Odeslat</button>
 
-
+                        </form>
 
                     </div>
-                </header>
+                </div>
             </div>
         </section>
     </div>
