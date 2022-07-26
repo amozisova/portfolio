@@ -408,5 +408,4 @@ include_once 'email.php';
 
     <script src="js/script.js"></script>
 </body>
-
 </html>
