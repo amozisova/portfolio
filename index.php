@@ -27,7 +27,7 @@ include_once 'email.php';
                 </span>
                 <span class="toggle-icon">
                     <a id="toggle-icon">
-                        <img src="img/menu.png" alt="toggle menu icon">
+                        <img src="img/icons/menu.png" alt="toggle menu icon">
                     </a>
                 </span>
             </div>
@@ -351,12 +351,6 @@ include_once 'email.php';
                     <div class="error" id="status">
                         <?php
                        echo $formStatus ? $formStatus : '';
-                       
-                       $name = (isset($_POST['name'])) ? htmlspecialchars($_POST['name']) : '';
-                       $email = (isset($_POST['email'])) ? htmlspecialchars($_POST['email']) : '';
-                       $subject = (isset($_POST['subject'])) ? htmlspecialchars($_POST['subject']) : '';
-                       $message = (isset($_POST['message'])) ? htmlspecialchars($_POST['message']) : '';
-
                         ?>
                     </div>
 

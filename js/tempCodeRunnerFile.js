@@ -1,1 +1,0 @@
-e.formStatus.innerHTML = "Formulář se odesílá.";
