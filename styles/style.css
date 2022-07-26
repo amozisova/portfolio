@@ -343,30 +343,46 @@ p {
 }
 
 /*
-contact section
+*** contact section ***
 */
 
-.contacts_content {
+.contacts_wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
 .contactbox {
   background: #FFFFFF;
   box-shadow: 0px 1px 4px 1px #0081A7;
   color: #F07167;
-  margin: 0;
-  padding: 4vh 10vw 1.5vh 1.5vw;
-  width: 50vw;
+  margin: 0 auto;
+  padding: 4vh 1.5vw 1.5vh 1.5vw;
+  width: 60vw;
+}
+
+.formCheck {
+display: flex;
+flex-direction: row;
+}
+
+.failed, .passed {
+  padding: 0.2rem;
+  height: auto;
+  width:1vw;
+  position: absolute;
+  display:none;
+}
+
+.errorMessage {
+  padding: 2rem;
 }
 
 form {
   display: grid;
-  grid-gap : 1rem 0;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 3fr 1fr;
+  gap : 1rem 0;
+  grid-template-columns: 2fr 6fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
 }
 
 input, textarea {
@@ -375,6 +391,11 @@ input, textarea {
   border: solid 1px #E3F7FD;
   font: inherit;
   resize: none;
+  margin: 0 1rem;
+}
+
+textarea {
+  white-space: pre-wrap;
 }
 
 input:valid {
@@ -392,16 +413,16 @@ label {
   font-size: 1.4rem;
 }
 
-
 .form_button {
-  grid-row: 6/6; 
+  grid-row: 5/5; 
   grid-column: 2/2;
   align-self: center;
   justify-self: center;
   width: auto;
+  border-radius: 5px;
 }
 
-.wrapper {
+.contact_form {
   margin: 2rem;
 }
 
@@ -409,6 +430,12 @@ label {
 color: #0081A7;
 font-size: 1.4rem;
 }
+
+.error {
+  color: #F07167;
+  font-size: 1.5rem;
+}
+
 
 /* responsive behaviour*/
 @media screen and (max-width: 992px) {
@@ -472,6 +499,10 @@ font-size: 1.4rem;
     width: 70vw;
   }
 
+  .contactbox {
+    padding: 4vh 10vw 1.5vh 1.5vw;
+    width: 60vw;
+  }
 
 }
 
@@ -550,5 +581,17 @@ font-size: 1.4rem;
     padding: 0.8rem;
     font-size: 1.1rem;
   }
+
+  .contactbox {
+    width: 72vw;
+  }
+
+  form {
+    display: grid;
+    gap : 2vw 0;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 3fr 1fr;
+  }
+
 
 }
