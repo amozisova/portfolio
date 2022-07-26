@@ -23,7 +23,7 @@ include_once 'email.php';
         <nav class="navbar">
             <div class="nav_home">
                 <span class="home-icon">
-                    <a class="nav-link" href="#home"><img src="img/icons/home.jpg" alt="home icon"></a>
+                    <a class="nav-link" href="index.php#home"><img src="img/icons/home.jpg" alt="home icon"></a>
                 </span>
                 <span class="toggle-icon">
                     <a id="toggle-icon">
@@ -34,18 +34,18 @@ include_once 'email.php';
 
             <div class="menu-items">
                 <span class="nav-item">
-                    <a class="nav-link" href="#aboutme">o mně</a>
+                    <a class="nav-link" href="index.php#aboutme">o mně</a>
                 </span>
                 <span class="nav-item">
-                    <a class="nav-link" href="#skills">dovednosti</a>
-                </span>
-
-                <span class="nav-item">
-                    <a class="nav-link" href="#projects">projekty</a>
+                    <a class="nav-link" href="index.php#skills">dovednosti</a>
                 </span>
 
                 <span class="nav-item">
-                    <a class="nav-link" href="#contact">kontakt</a>
+                    <a class="nav-link" href="index.php#projects">projekty</a>
+                </span>
+
+                <span class="nav-item">
+                    <a class="nav-link" href="index.php#contact">kontakt</a>
                 </span>
 
             </div>
@@ -350,24 +350,51 @@ include_once 'email.php';
 
                     <div class="error" id="status">
                         <?php
-                        echo $formStatus ? $formStatus : '';
+                       echo $formStatus ? $formStatus : '';
+                       
+                       $name = (isset($_POST['name'])) ? htmlspecialchars($_POST['name']) : '';
+                       $email = (isset($_POST['email'])) ? htmlspecialchars($_POST['email']) : '';
+                       $subject = (isset($_POST['subject'])) ? htmlspecialchars($_POST['subject']) : '';
+                       $message = (isset($_POST['message'])) ? htmlspecialchars($_POST['message']) : '';
+
                         ?>
                     </div>
 
                     <div class="contactbox">
 
                         <form method="POST" action="email.php" id="contact-form">
+                        
                             <label for="name">Vaše jméno:</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name">
+                            <div class="formCheck">
+                            <img src="img/icons/error.png" class="failed">
+                            <img src="img/icons/check.png" class="passed">
+                            <div class="errorMessage"></div>
+                            </div>
 
                             <label for="email">Váš e-mail:</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email">
+                            <div class="formCheck">
+                            <img src="img/icons/error.png" class="failed">
+                            <img src="img/icons/check.png" class="passed">
+                            <div class="errorMessage"></div>
+                            </div>
 
                             <label for="subject">Předmět:</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <input type="text" id="subject" name="subject">
+                            <div class="formCheck">
+                            <img src="img/icons/error.png" class="failed">
+                            <img src="img/icons/check.png" class="passed">
+                            <div class="errorMessage"></div>
+                            </div>
 
                             <label for="message">Vaše zpráva:</label>
-                            <textarea id="message" name="message" rows="8" cols="50" required></textarea>
+                            <textarea id="message" name="message" rows="8" cols="50"></textarea>
+                            <div class="formCheck">
+                            <img src="img/icons/error.png" class="failed">
+                            <img src="img/icons/check.png" class="passed">
+                            <div class="errorMessage"></div>
+                            </div>
 
                             <button type="submit" class="form_button tab-button">Odeslat</button>
 

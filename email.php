@@ -41,7 +41,7 @@ if ($_POST)
         ];
 
         $sendTo = 'amozisova@gmail.com';
-        $subject = 'Zpráva z mozisa.eu:' . $_POST['subject'];
+        $subject = 'Zpráva z mozisa.eu: ' . $_POST['subject'];
         $sendMail = mb_send_mail($sendTo, $subject, $message, $headers);
         if ($sendMail) {
             header('Location: index.php?send#status');
