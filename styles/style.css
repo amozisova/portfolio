@@ -583,12 +583,6 @@ label {
     font-size: 1.1rem;
   }
 
-  .projects_wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
   .contactbox {
     padding: 1.5vw;
     width: 72vw;
