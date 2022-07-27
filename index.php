@@ -267,7 +267,7 @@ require_once 'email.php';
                         </div>
                     </div>
                     <div class="project-buttons">
-                        <a href="https://github.com/amozisova/order-summary-FMchallenge" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
+                        <a href="https://github.com/amozisova/Frontend-Mentor---order-summary" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
                         <a href="https://www.frontendmentor.io/solutions/order-summary-card-mobilefirst-6FT1wc-Df" target="_blank"><button class="tab-button">Demo</button></a>
                     </div>
                 </article>
