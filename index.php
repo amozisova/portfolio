@@ -1,6 +1,5 @@
 <?php
-include_once 'language.php';
-include_once 'email.php';
+require_once 'email.php';
 ?>
 
 <!DOCTYPE html>
@@ -10,11 +9,10 @@ include_once 'email.php';
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Alzbeta Mozisova - portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300&display=swap" rel="stylesheet">
-    <!--link rel="stylesheet" href="styles/stylereset.css"-->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -53,13 +51,13 @@ include_once 'email.php';
 
 
         <section class="intro">
-            <div class="title">
+            <header class="title">
                 <h1>Dobrý den.
                     <br>Jsem <span class="name">Alžběta Možíšová</span>.
                 </h1>
-            </div>
+            </header>
 
-            <div class="subtitle">
+            <div class="intro-content">
                 <div class="arrow">
                     <a href="#aboutme"><img src="img/arrow_down.png" width="325" height="485" alt="arrow down"></a>
                 </div>
@@ -78,21 +76,21 @@ include_once 'email.php';
 
 
     <div class="container">
-        <section class="main" id="aboutme">
-            <div class="section_title">
+        <main class="content" id="aboutme">
+            <header class="section_title">
                 <h1>O mně</h1>
-            </div>
-            <div class="main_content">
+            </header>
+            <section class="main-content">
                 <div>
                     <img src="img/mozisova_face.jpg" alt="Alzbeta Mozisova" height="223" width="200" class="story_img">
                 </div>
                 <div class="tab-wrapper">
-                    <div class="tabs">
+                    <nav class="tabs">
                         <button class="tab-button active" data-id="tab-me">O mně</button>
                         <button class="tab-button" data-id="tab-edu">Vzdělání</button>
                         <button class="tab-button" data-id="tab-courses">Kurzy</button>
-                    </div>
-                    <div class="storybox">
+                    </nav>
+                    <article class="storybox">
                         <div class="tab-content active" id="tab-me">
                             Už během studia na střední škole mě zajímaly počítače, koupila jsem si učebnici HTML a učila se psát web v poznámkovém bloku… Moje první webová stránka byl deníček, kam jsem zapisovala své zážitky. Další stránka byla o hudbě, která mě zajímala. Během let jsem občas vytvořila webové stránky pro někoho známého, pro nový studijní obor, pro studentský spolek, který jsme založili…
                             <p>Ale ve svém studiu jsem se vydala humanitním směrem a věnovala se sociologii. Řadu let jsem se profesně pohybovala v sociální oblasti, převážně v neziskovém sektoru, v tématech domácího násilí a ohrožených dětí.</p>
@@ -129,61 +127,59 @@ include_once 'email.php';
                                 </p>
                             </ul>
                         </div>
-                    </div>
+                    </article>
                 </div>
-            </div>
+            </section>
+        </main>
     </div>
 
 
     <div class="container">
-        <section class="main" id="skills">
-            <div class="section_title">
+        <section class="content" id="skills">
+            <header class="section_title">
                 <h1>Dovednosti</h1>
-            </div>
-            <div class="skills_wrapper">
+            </header>
+            <article class="skills-content">
                 <div class="skill">
-                    <span class="skill_title">pravidelně používám</span>
+                    <header class="skill_title">pravidelně používám</header>
                     <img src="img/logos/php_logo.png" alt="PHP, MySQL logo">
                     <img src="img/logos/html5_logo.png" alt="HTML5 logo">
                     <img src="img/logos/css3_logo.png" alt="CSS3 logo">
                 </div>
 
                 <div class="skill">
-                    <span class="skill_title">další technologie</span>
+                    <header class="skill_title">další technologie</header>
                     <img src="img/logos/js_logo.png" alt="JavaScript logo">
                     <img src="img/logos/sass_logo.png" alt="SASS logo">
                 </div>
 
                 <div class="skill">
-                    <span class="skill_title">knihovny</span>
+                    <header class="skill_title">knihovny</header>
                     <img src="img/logos/symfony_logo.png" alt="Symfony logo">
                     <img src="img/logos/bootstrap_logo.png" alt="Bootstrap logo">
                     <img src="img/logos/jquery_logo.png" alt="jQuery logo">
                 </div>
 
                 <div class="skill">
-                    <span class="skill_title">nástroje</span>
+                    <header class="skill_title">nástroje</header>
                     <img src="img/logos/xampp_logo.png" alt="XAMPP logo">
                     <img src="img/logos/git_logo.png" alt="Git logo">
                     <img src="img/logos/composer_logo.png" alt="Composer logo">
                     <img src="img/logos/vscode_logo.png" alt="VSCode logo">
                     <img src="img/logos/figma_logo.png" alt="Figma logo">
                     <img src="img/logos/wordpress_logo.png" alt="Wordpress logo">
-
                 </div>
-
-            </div>
+            </article>
         </section>
     </div>
 
     <div class="container">
-        <section class="main" id="projects">
-            <div class="section_title">
+        <section class="content" id="projects">
+            <header class="section_title">
                 <h1>Projekty</h1>
-            </div>
+            </header>
             <div class="projects_wrapper">
-
-                <div class="project">
+                <article class="project">
                     <div class="project-top">
                         <div class="project-img">
                             <img src="img/projects/portfolio.png" alt="project thumbnail">
@@ -202,9 +198,9 @@ include_once 'email.php';
                         <button class="tab-button">Zdrojový kód</button>
                         <button class="tab-button">Demo</button>
                     </div>
-                </div>
+                </article>
 
-                <div class="project">
+                <article class="project">
                     <div class="project-top">
                         <div class="project-img">
                             <img src="img/projects/portfolio.png" alt="project thumbnail">
@@ -225,9 +221,9 @@ include_once 'email.php';
                     <div class="project-buttons">
                         <a href="https://github.com/amozisova/portfolio" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
                     </div>
-                </div>
+                </article>
 
-                <div class="project">
+                <article class="project">
                     <div class="project-top">
                         <div class="project-img">
                             <img src="img/projects/drumkit.png" alt="project thumbnail">
@@ -247,17 +243,12 @@ include_once 'email.php';
                         <a href="https://github.com/amozisova/drumkit" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
                         <a href="https://amozisova.github.io/drumkit/" target="_blank"><button class="tab-button">Demo</button></a>
                     </div>
-                </div>
-
-
-
+                </article>
             </div>
 
             <!-- second row of projects -->
-
             <div class="projects_wrapper">
-
-                <div class="project">
+                <article class="project">
                     <div class="project-top">
                         <div class="project-img">
                             <img src="img/projects/order.png" alt="project thumbnail">
@@ -279,9 +270,9 @@ include_once 'email.php';
                         <a href="https://github.com/amozisova/order-summary-FMchallenge" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
                         <a href="https://www.frontendmentor.io/solutions/order-summary-card-mobilefirst-6FT1wc-Df" target="_blank"><button class="tab-button">Demo</button></a>
                     </div>
-                </div>
+                </article>
 
-                <div class="project">
+                <article class="project">
                     <div class="project-top">
                         <div class="project-img">
                             <img src="img/projects/qr-th.jpg" alt="project thumbnail">
@@ -302,9 +293,9 @@ include_once 'email.php';
                         <a href="https://github.com/amozisova/Frontend-Mentor---QR-code-component" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
                         <a href="https://www.frontendmentor.io/solutions/qr-code-component-using-css-grid-GNvblQ89S" target="_blank"><button class="tab-button">Demo</button></a>
                     </div>
-                </div>
+                </article>
 
-                <div class="project">
+                <article class="project">
                     <div class="project-top">
                         <div class="project-img">
                             <img src="img/projects/drumkit.png" alt="project thumbnail">
@@ -323,77 +314,72 @@ include_once 'email.php';
                         <a href="https://github.com/amozisova/drumkit" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
                         <a href="https://amozisova.github.io/drumkit/" target="_blank"><button class="tab-button">Demo</button></a>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
     </div>
 
     <!-- contact -->
     <div class="container">
-        <section class="main" id="contact">
-            <div class="section_title">
+        <section class="content" id="contact">
+            <header class="section_title">
                 <h1>Kontakt</h1>
-            </div>
+            </header>
             <div class="contacts_wrapper">
 
-                <div class="contactIcons">
+                <nav class="contactIcons">
                     <a href="mailto:amozisova@gmail.com"><img src="img/icons/message.png" alt="message icon"></a>
                     <a href="https://github.com/amozisova" target="_blank"><img src="img/icons/github.png" alt="GitHub icon"></a>
                     <a href="http://www.linkedin.com/in/mozisa" target="_blank"><img src="img/icons/linkedin-logo.png" alt="LinkedIn icon"></a>
-                </div>
+                </nav>
                 <div class="contact_form">
-
-
                     <header class="contact_title">
                         <h3>Zanechte mi zprávu</h3>
                     </header>
 
                     <div class="error" id="status">
-                        <?php
-                       echo $formStatus ? $formStatus : '';
-                        ?>
+                        <?php echo $formStatus ? $formStatus : '';?>
                     </div>
 
                     <div class="contactbox">
 
                         <form method="POST" action="email.php" id="contact-form">
-                        
+
                             <label for="name">Vaše jméno:</label>
                             <input type="text" id="name" name="name">
                             <div class="formCheck">
-                            <img src="img/icons/error.png" class="failed">
-                            <img src="img/icons/check.png" class="passed">
-                            <div class="errorMessage"></div>
+                                <img src="img/icons/error.png" class="failed">
+                                <img src="img/icons/check.png" class="passed">
+                                <div class="errorMessage"></div>
                             </div>
 
                             <label for="email">Váš e-mail:</label>
                             <input type="email" id="email" name="email">
                             <div class="formCheck">
-                            <img src="img/icons/error.png" class="failed">
-                            <img src="img/icons/check.png" class="passed">
-                            <div class="errorMessage"></div>
+                                <img src="img/icons/error.png" class="failed">
+                                <img src="img/icons/check.png" class="passed">
+                                <div class="errorMessage"></div>
                             </div>
 
                             <label for="subject">Předmět:</label>
                             <input type="text" id="subject" name="subject">
                             <div class="formCheck">
-                            <img src="img/icons/error.png" class="failed">
-                            <img src="img/icons/check.png" class="passed">
-                            <div class="errorMessage"></div>
+                                <img src="img/icons/error.png" class="failed">
+                                <img src="img/icons/check.png" class="passed">
+                                <div class="errorMessage"></div>
                             </div>
 
                             <label for="message">Vaše zpráva:</label>
                             <textarea id="message" name="message" rows="8" cols="50"></textarea>
                             <div class="formCheck">
-                            <img src="img/icons/error.png" class="failed">
-                            <img src="img/icons/check.png" class="passed">
-                            <div class="errorMessage"></div>
+                                <img src="img/icons/error.png" class="failed">
+                                <img src="img/icons/check.png" class="passed">
+                                <div class="errorMessage"></div>
                             </div>
 
                             <button type="submit" class="form_button tab-button">Odeslat</button>
 
                         </form>
-
                     </div>
                 </div>
             </div>
