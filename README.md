@@ -11,7 +11,7 @@ This is my personal portfolio website. I created this project to introduce mysel
 #### You can view the website on the following [Site Link](https://www.mozisa.eu/).
 
 ### Screenshot
-https://github.com/amozisova/drumkit/blob/main/drumkit_screenshot.jpg
+https://github.com/amozisova/portfolio/blob/main/img/projects/portfolio.png
 
 ### Built with
 - HTML5
