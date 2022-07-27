@@ -35,14 +35,15 @@ if ($_POST)
         $headers = [
             'MIME-Version' => '1.0',
             'Content-type' => 'text/html; charset=utf8',
-            'From' => $_POST['email'],
-            'Reply-To' => $_POST['email'],
+            'From' => $email,
+            'Reply-To' => $email,
             'X-Mailer' => 'PHP/' . phpversion()
         ];
 
         $sendTo = 'amozisova@gmail.com';
-        $subject = 'Zpráva z mozisa.eu: ' . $_POST['subject'];
-        $sendMail = mb_send_mail($sendTo, $subject, $message, $headers);
+        $email_subject = 'Zpráva z mozisa.eu: ' . $subject;
+        $email_message ='<p><strong>'. $name .'</strong> s emailem <strong>'. $email .'</strong> posílá následující zprávu:</p>'.$message;
+        $sendMail = mb_send_mail($sendTo, $email_subject, $email_message, $headers);
         if ($sendMail) {
             header('Location: index.php?send#status');
             exit;

@@ -368,7 +368,7 @@ p {
 .passed {
   padding: 0.2rem;
   height: auto;
-  width: 1vw;
+  width: 1.5vw;
   position: absolute;
   display: none;
 }
@@ -504,6 +504,12 @@ label {
     padding: 4vh 1.5vw 1.5vh 1.5vw;
     width: 60vw;
   }
+
+  .failed,
+  .passed {
+    width: 3vw;
+  }
+
 
 }
 
