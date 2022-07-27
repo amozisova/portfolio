@@ -319,7 +319,6 @@ require_once 'email.php';
         </section>
     </div>
 
-    <!-- contact -->
     <div class="container">
         <section class="content" id="contact">
             <header class="section_title">
@@ -332,12 +331,12 @@ require_once 'email.php';
                     <a href="https://github.com/amozisova" target="_blank"><img src="img/icons/github.png" alt="GitHub icon"></a>
                     <a href="http://www.linkedin.com/in/mozisa" target="_blank"><img src="img/icons/linkedin-logo.png" alt="LinkedIn icon"></a>
                 </nav>
-                <div class="contact_form">
+                <div class="contact_form_wrapper ">
                     <header class="contact_title">
                         <h3>Zanechte mi zprávu</h3>
                     </header>
-
-                    <div class="error" id="status">
+                    <!-- displays form validation status from email.php -->
+                    <div class="php_formStatus" id="status">
                         <?php echo $formStatus ? $formStatus : '';?>
                     </div>
 
