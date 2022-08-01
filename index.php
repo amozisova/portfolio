@@ -23,7 +23,7 @@ require_once 'email.php';
                 <span class="home-icon">
                     <a class="nav-link" href="index.php#home"><img src="img/icons/home.jpg" alt="home icon"></a>
                 </span>
-                <span class="toggle-icon">
+                <span class="toggle">
                     <a id="toggle-icon">
                         <img src="img/icons/menu.png" alt="toggle menu icon">
                     </a>

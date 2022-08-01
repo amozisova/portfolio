@@ -88,7 +88,7 @@ a:hover {
   padding: 1rem;
 }
 
-.toggle-icon {
+.toggle {
   color: white;
   cursor: pointer;
   display: none;
@@ -549,15 +549,11 @@ responsive behaviour
     justify-content: center;
   }
 
-  .toggle-icon {
+  .toggle {
     display: block;
   }
 
   .menu-items {
-    display: none;
-  }
-
-  .menu_links {
     display: none;
   }
 
@@ -569,10 +565,6 @@ responsive behaviour
     justify-content: center;
   }
 
-  .menu_links.responsive {
-    display: flex;
-    flex-direction: column;
-  }
 
         /** main content wrapper **/
   .content {
