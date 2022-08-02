@@ -50,10 +50,10 @@ if ($_POST) {
         $email_message = '<p><strong>' . $name . '</strong> s emailem <strong>' . $email . '</strong> posílá následující zprávu:</p>' . $message;
         $sendMail = mb_send_mail($sendTo, $email_subject, $email_message, $headers);
         if ($sendMail) {
-            header('Location: index.php?send#status');
+            header('Location: index.php?send#contact');
             exit;
         } else
-            header('Location: index.php?failed#status');
+            header('Location: index.php?failed#contact');
         exit;
     }
 }
