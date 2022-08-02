@@ -23,7 +23,7 @@ require_once 'email.php';
                 <span class="home-icon">
                     <a class="nav-link" href="index.php#home"><img src="img/icons/home.jpg" alt="home icon"></a>
                 </span>
-                <span class="toggle-icon">
+                <span class="toggle">
                     <a id="toggle-icon">
                         <img src="img/icons/menu.png" alt="toggle menu icon">
                     </a>
@@ -95,7 +95,7 @@ require_once 'email.php';
                             Už během studia na střední škole mě zajímaly počítače, koupila jsem si učebnici HTML a učila se psát web v poznámkovém bloku… Moje první webová stránka byl deníček, kam jsem zapisovala své zážitky. Další stránka byla o hudbě, která mě zajímala. Během let jsem občas vytvořila webové stránky pro někoho známého, pro nový studijní obor, pro studentský spolek, který jsme založili…
                             <p>Ale ve svém studiu jsem se vydala humanitním směrem a věnovala se sociologii. Řadu let jsem se profesně pohybovala v sociální oblasti, převážně v neziskovém sektoru, v tématech domácího násilí a ohrožených dětí.</p>
                             <p>Ve svých 35 letech jsem se však rozhodla pro zásadní kariérní změnu – vzpomněla jsem si na svou zálibu ve vytváření webů, na svůj zájem o počítače a internet, probudila se ve mně touha zase něco vytvářet (od nul a jedniček) a vydala jsem se směrem k IT, s cílem nezůstat u webových stránek, ale naučit se programovat.</p>
-                            <p>Teď čekám na svou první pracovní příležitost, která mi umožní být skutečně programátorkou a věnovat se tomu naplno.</p>
+                            <p>Absolvovala jsem rekvalifikační kurz na pozici „programátor webových aplikací v PHP“ a teď hledám svou první pracovní příležitost, která mi umožní být skutečně programátorkou a věnovat se tomu naplno.</p>
                         </div>
                         <div class="tab-content" id="tab-edu">
                             <ul>
@@ -182,15 +182,15 @@ require_once 'email.php';
                 <article class="project">
                     <div class="project-top">
                         <div class="project-img">
-                            <img src="img/projects/portfolio.png" alt="project thumbnail">
+                            <img src="img/projects/insapp.png" alt="app thumbnail">
                         </div>
                         <div class="project-info">
-                            <h4>projekt Evidence pojistných událostí</h4>
-                            <p>Vývoj webové aplikace pro evidenci pojistných událostí v třívrstvé architektuře (MVC) v technologiích:</p>
+                            <h4>projekt Evidence a správa pojištění</h4>
+                            <p>Vývoj webové aplikace pro evidenci pojištění v třívrstvé architektuře (MVC) v technologiích:</p>
                             <ul>
                                 <li>PHP, MySQL</li>
                                 <li>HTML5, CSS3</li>
-                                <li>Twig, Bootstrap</li>
+                                <li>Twig</li>
                             </ul>
                         </div>
                     </div>
@@ -295,26 +295,7 @@ require_once 'email.php';
                     </div>
                 </article>
 
-                <article class="project">
-                    <div class="project-top">
-                        <div class="project-img">
-                            <img src="img/projects/drumkit.png" alt="project thumbnail">
-                        </div>
-                        <div class="project-info">
-                            <h4>-doplnit-</h4>
-
-                            <p>Použité technologie:</p>
-                            <ul>
-                                <li>JavaScript</li>
-                                <li>HTML5, CSS3</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="project-buttons">
-                        <a href="https://github.com/amozisova/drumkit" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
-                        <a href="https://amozisova.github.io/drumkit/" target="_blank"><button class="tab-button">Demo</button></a>
-                    </div>
-                </article>
+                
             </div>
         </section>
     </div>
