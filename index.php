@@ -188,15 +188,15 @@ require_once 'email.php';
                             <h4>projekt Evidence a správa pojištění</h4>
                             <p>Vývoj webové aplikace pro evidenci pojištění v třívrstvé architektuře (MVC) v technologiích:</p>
                             <ul>
-                                <li>PHP, MySQL</li>
-                                <li>HTML5, CSS3</li>
-                                <li>Twig</li>
+                                <li>PHP, MySQL, HTML5</li>
+                                <li>CSS3, Twig</li>
+                                <li>Javascript</li>
                             </ul>
                         </div>
                     </div>
                     <div class="project-buttons">
-                        <button class="tab-button">Zdrojový kód</button>
-                        <button class="tab-button">Demo</button>
+                    <a href="https://github.com/amozisova/ins_app" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
+                    <a href="https://insapp.mozisa.eu" target="_blank"><button class="tab-button">Demo</button></a>
                     </div>
                 </article>
 
