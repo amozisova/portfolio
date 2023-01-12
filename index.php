@@ -1,7 +1,3 @@
-<?php
-require_once 'email.php';
-?>
-
 <!DOCTYPE html>
 <html lang="cs-cz">
 
@@ -353,7 +349,6 @@ require_once 'email.php';
                     </header>
                     <!-- displays form validation status from email.php -->
                     <div class="php_formStatus" id="status">
-                        <?php echo $formStatus ? $formStatus : ''; ?>
                     </div>
 
                     <div class="contactbox">
@@ -398,7 +393,7 @@ require_once 'email.php';
                     </div>
                 </div>
                 <footer class="copyright">
-                    ©<?php echo date("Y"); ?> |
+                    ©2023 |
                     <a href="https://www.mozisa.eu">Alžběta Možíšová</a>
                 </footer>
             </div>
