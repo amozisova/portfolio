@@ -14,6 +14,7 @@ require_once 'email.php';
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/jpg" href="img/favicon.png">
 </head>
 
 <body>
