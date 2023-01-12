@@ -62,7 +62,7 @@ require_once 'email.php';
                     <a href="#aboutme"><img src="img/arrow_down.png" width="325" height="485" alt="arrow down"></a>
                 </div>
                 <div class="subheading">
-                    <h3>Programátorka, která čeká na svou příležitost.</h3>
+                    <h3>PHP programátorka.</h3>
                     <div class="contactIcons">
                         <a href="mailto:amozisova@gmail.com"><img src="img/icons/message.png" alt="message icon"></a>
                         <a href="https://github.com/amozisova" target="_blank"><img src="img/icons/github.png" alt="GitHub icon"></a>
@@ -86,16 +86,20 @@ require_once 'email.php';
                 </div>
                 <div class="tab-wrapper">
                     <nav class="tabs">
-                        <button class="tab-button active" data-id="tab-me">O mně</button>
+                        <button class="tab-button active" data-id="tab-work">Práce</button>
                         <button class="tab-button" data-id="tab-edu">Vzdělání</button>
                         <button class="tab-button" data-id="tab-courses">Kurzy</button>
+                        <button class="tab-button" data-id="tab-me">O mně</button>
                     </nav>
                     <article class="storybox">
-                        <div class="tab-content active" id="tab-me">
-                            Už během studia na střední škole mě zajímaly počítače, koupila jsem si učebnici HTML a učila se psát web v poznámkovém bloku… Moje první webová stránka byl deníček, kam jsem zapisovala své zážitky. Další stránka byla o hudbě, která mě zajímala. Během let jsem občas vytvořila webové stránky pro někoho známého, pro nový studijní obor, pro studentský spolek, který jsme založili…
-                            <p>Ale ve svém studiu jsem se vydala humanitním směrem a věnovala se sociologii. Řadu let jsem se profesně pohybovala v sociální oblasti, převážně v neziskovém sektoru, v tématech domácího násilí a ohrožených dětí.</p>
-                            <p>Ve svých 35 letech jsem se však rozhodla pro zásadní kariérní změnu – vzpomněla jsem si na svou zálibu ve vytváření webů, na svůj zájem o počítače a internet, probudila se ve mně touha zase něco vytvářet (od nul a jedniček) a vydala jsem se směrem k IT, s cílem nezůstat u webových stránek, ale naučit se programovat.</p>
-                            <p>Absolvovala jsem rekvalifikační kurz na pozici „programátor webových aplikací v PHP“ a teď hledám svou první pracovní příležitost, která mi umožní být skutečně programátorkou a věnovat se tomu naplno.</p>
+
+                        <div class="tab-content active" id="tab-work">
+                            Od října 2022 pracuji jako vývojářka webových aplikací v jazyce PHP.
+
+                            <p>Řadu let jsem se profesně pohybovala v sociální oblasti, převážně v neziskovém sektoru, v tématech domácího násilí a ohrožených dětí.
+                                <br>V lednu 2022 jsem se však rozhodla pro zásadní kariérní změnu – vzpomněla jsem si na svou zálibu ve vytváření webů, na svůj zájem o počítače a internet – a vydala jsem se směrem k IT, s cílem nezůstat u webových stránek, ale naučit se programovat.
+                            </p>
+                            <p>Absolvovala jsem rekvalifikační kurz na pozici „programátor webových aplikací v PHP“ a několik kurzů zaměřených na web development, abych se mohla stát programátorkou a věnovat se tomu naplno.</p>
                         </div>
                         <div class="tab-content" id="tab-edu">
                             <ul>
@@ -127,6 +131,11 @@ require_once 'email.php';
                                 </p>
                             </ul>
                         </div>
+                        <div class="tab-content" id="tab-me">
+                            Už během studia na střední škole mě zajímaly počítače, koupila jsem si učebnici HTML a učila se psát web v poznámkovém bloku… Moje první webová stránka byl deníček, kam jsem zapisovala své zážitky. Další stránka byla o hudbě, která mě zajímala. Během let jsem občas vytvořila webové stránky pro někoho známého, pro nový studijní obor, pro studentský spolek, který jsme založili…
+                            <p>Ale ve svém studiu jsem se vydala humanitním směrem a věnovala se sociologii. Řadu let jsem se profesně pohybovala v sociální oblasti, převážně v neziskovém sektoru.</p>
+                            <p>V 35 letech jsem se však rozhodla pro zásadní kariérní změnu, probudila se ve mně touha zase něco vytvářet (od nul a jedniček) a rozhodla jsem se vkročit naplno do světa IT.
+                        </div>
                     </article>
                 </div>
             </section>
@@ -155,16 +164,16 @@ require_once 'email.php';
 
                 <div class="skill">
                     <header class="skill_title">knihovny</header>
-                    <img src="img/logos/symfony_logo.png" alt="Symfony logo">
+                    <img src="img/logos/nette_logo.png" alt="Nette logo">
                     <img src="img/logos/bootstrap_logo.png" alt="Bootstrap logo">
                     <img src="img/logos/jquery_logo.png" alt="jQuery logo">
                 </div>
 
                 <div class="skill">
                     <header class="skill_title">nástroje</header>
-                    <img src="img/logos/xampp_logo.png" alt="XAMPP logo">
                     <img src="img/logos/git_logo.png" alt="Git logo">
                     <img src="img/logos/composer_logo.png" alt="Composer logo">
+                    <img src="img/logos/docker_logo.png" alt="Docker logo">
                     <img src="img/logos/vscode_logo.png" alt="VSCode logo">
                     <img src="img/logos/figma_logo.png" alt="Figma logo">
                     <img src="img/logos/wordpress_logo.png" alt="Wordpress logo">
@@ -178,7 +187,32 @@ require_once 'email.php';
             <header class="section_title">
                 <h1>Projekty</h1>
             </header>
+            <!-- first row of projects -->
             <div class="projects_wrapper">
+                <article class="project">
+                    <div class="project-top">
+                        <div class="project-img">
+                            <img src="img/projects/ntt.png" alt="nette app thumbnail">
+                        </div>
+                        <div class="project-info">
+                            <h4>projekt Jednoduchý redakční systém s použitím frameworku Nette</h4>
+                            <p>Obsahuje admin sekci pro správu článků, ve dvou úrovních uživatelských oprávnění (admin, redaktor).</p>
+                            <ul>
+                                <li>PHP, HTML5</li>
+                                <li>Nette, Latte</li>
+                                <li>MySQL, Javascript, CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://ntt.mozisa.eu" target="_blank"><button class="tab-button">Demo</button></a>
+                        <span class="project-note">
+                            <h5>Pokud si chcete vyzkoušet i admin část aplikace, <a href="index.php#contact">napište mi.</a></h5>
+                        </span>
+                    </div>
+                </article>
+
+
                 <article class="project">
                     <div class="project-top">
                         <div class="project-img">
@@ -188,15 +222,15 @@ require_once 'email.php';
                             <h4>projekt Evidence a správa pojištění</h4>
                             <p>Vývoj webové aplikace pro evidenci pojištění v třívrstvé architektuře (MVC) v technologiích:</p>
                             <ul>
-                                <li>PHP, MySQL, HTML5</li>
-                                <li>CSS3, Twig</li>
+                                <li>PHP, HTML5, CSS3</li>
+                                <li>MySQL, Twig</li>
                                 <li>Javascript</li>
                             </ul>
                         </div>
                     </div>
                     <div class="project-buttons">
-                    <a href="https://github.com/amozisova/ins_app" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
-                    <a href="https://insapp.mozisa.eu" target="_blank"><button class="tab-button">Demo</button></a>
+                        <a href="https://github.com/amozisova/ins_app" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
+                        <a href="https://insapp.mozisa.eu" target="_blank"><button class="tab-button">Demo</button></a>
                     </div>
                 </article>
 
@@ -222,6 +256,10 @@ require_once 'email.php';
                         <a href="https://github.com/amozisova/portfolio" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
                     </div>
                 </article>
+            </div>
+
+            <!-- second row of projects -->
+            <div class="projects_wrapper">
 
                 <article class="project">
                     <div class="project-top">
@@ -244,10 +282,7 @@ require_once 'email.php';
                         <a href="https://amozisova.github.io/drumkit/" target="_blank"><button class="tab-button">Demo</button></a>
                     </div>
                 </article>
-            </div>
 
-            <!-- second row of projects -->
-            <div class="projects_wrapper">
                 <article class="project">
                     <div class="project-top">
                         <div class="project-img">
@@ -295,7 +330,7 @@ require_once 'email.php';
                     </div>
                 </article>
 
-                
+
             </div>
         </section>
     </div>
@@ -318,7 +353,7 @@ require_once 'email.php';
                     </header>
                     <!-- displays form validation status from email.php -->
                     <div class="php_formStatus" id="status">
-                        <?php echo $formStatus ? $formStatus : '';?>
+                        <?php echo $formStatus ? $formStatus : ''; ?>
                     </div>
 
                     <div class="contactbox">
@@ -362,10 +397,16 @@ require_once 'email.php';
                         </form>
                     </div>
                 </div>
+                <footer class="copyright">
+                    ©2023 |
+                    <a href="https://www.mozisa.eu">Alžběta Možíšová</a>
+                </footer>
             </div>
+
         </section>
     </div>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
