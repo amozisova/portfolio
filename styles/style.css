@@ -132,7 +132,7 @@ intro section
 .title h1 {
   font-size: 4.5rem;
   font-weight: 600;
-  margin: 0.8rem 0;
+  margin: 0.8rem 0 0.8rem 2.7rem;
 }
 
 .name {
@@ -146,7 +146,7 @@ intro section
   display: flex;
   font-size: 2.5rem;
   font-weight: 300;
-  margin: 1rem 3rem;
+  margin: 1rem 0;
 }
 
 .subheading {
@@ -160,7 +160,7 @@ intro section
 }
 
 .arrow {
-  margin: 2.2rem 0 0 1rem;
+  margin: 0 1rem;
 }
 
 .arrow img {
@@ -482,6 +482,10 @@ responsive behaviour
     grid-column: col-start 2 / 12;
   }
 
+  .title h1 {
+    margin: 0.8rem 0;
+  }
+ 
   .intro-content {
     flex-direction: column-reverse;
     margin: 0;
