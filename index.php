@@ -1,3 +1,7 @@
+<?php
+require_once 'email.php';
+?>
+
 <!DOCTYPE html>
 <html lang="cs-cz">
 
@@ -349,6 +353,7 @@
                     </header>
                     <!-- displays form validation status from email.php -->
                     <div class="php_formStatus" id="status">
+                        <?php echo $formStatus ? $formStatus : ''; ?>
                     </div>
 
                     <div class="contactbox">
