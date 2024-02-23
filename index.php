@@ -120,8 +120,12 @@ require_once 'email.php';
                         </div>
                         <div class="tab-content" id="tab-courses">
                             <ul>
+                                <h5>Docker + PHP</h5>
+                                <h6>Gary Clarke (<a href="https://garyclarketech.teachable.com/p/learn-docker-and-php?_ga=2.69426777.837741287.1708702665-524363695.1708702665&_gl=1*yywwh8*_ga*NTI0MzYzNjk1LjE3MDg3MDI2NjU.*_ga_S433ZS6S1Q*MTcwODcwMjY2NS4xLjAuMTcwODcwMjY2NS4wLjAuMA.." target="_blank">garyclarke.tech</a>)</h6>
+                                <p>
                                 <h5>The Complete 2022 Web Development Bootcamp</h5>
                                 <h6>Angela Yu (<a href="https://www.udemy.com/course/the-complete-web-development-bootcamp" target="_blank">udemy.com</a>)</h6>
+                                </p>
                                 <p>
                                 <h5>Write PHP Like a Pro: Build a PHP MVC Framework From Scratch</h5>
                                 <h6>Dave Hollingworth (<a href="https://www.udemy.com/course/php-mvc-from-scratch" target="_blank">udemy.com</a>)</h6>
@@ -206,10 +210,8 @@ require_once 'email.php';
                         </div>
                     </div>
                     <div class="project-buttons">
+                        <a href="https://github.com/amozisova/clanky-nette" target="_blank"><button class="tab-button">Zdrojový kód</button></a>
                         <a href="https://ntt.mozisa.eu" target="_blank"><button class="tab-button">Demo</button></a>
-                        <span class="project-note">
-                            <h5>Pokud si chcete vyzkoušet i admin část aplikace, <a href="index.php#contact">napište mi.</a></h5>
-                        </span>
                     </div>
                 </article>
 
@@ -399,7 +401,7 @@ require_once 'email.php';
                     </div>
                 </div>
                 <footer class="copyright">
-                    ©2023 |
+                    ©2022-2024 |
                     <a href="https://www.mozisa.eu">Alžběta Možíšová</a>
                 </footer>
             </div>
