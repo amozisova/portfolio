@@ -27,6 +27,11 @@ body {
   padding: 0;
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
 }
 
 /* links */
@@ -38,7 +43,6 @@ a {
 a:hover {
   color: #F07167;
 }
-
 
 /*** main container ***/
 .container {
@@ -377,92 +381,12 @@ contact section
   font-size: 1.4rem;
 }
 
-.php_formStatus {
-  color: #F07167;
-  font-size: 1.5rem;
-}
-
-/* form container */
-.contactbox {
-  background: #FFFFFF;
-  box-shadow: 0px 1px 4px 1px #0081A7;
-  color: #F07167;
-  margin: 0 auto;
-  padding: 4vh 1.5vw 1.5vh 1.5vw;
-  width: 60vw;
-}
-
-/* form styling */
-form {
-  display: grid;
-  gap: 1rem 0;
-  grid-template-columns: 2fr 6fr 3fr;
-  grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
-}
-
-input,
-textarea {
-  background: #F0F0F0;
-  border-radius: 5px;
-  border: solid 1px #E3F7FD;
-  font: inherit;
-  resize: none;
-  margin: 0 1rem;
-}
-
-textarea {
-  white-space: pre-line;
-}
-
-input:valid {
-  border: solid 2px #FED9B7;
-}
-
-input:focus,
-textarea:focus {
-  background: #D5F3FD;
-  border: solid 1px #0081A7;
-  outline: none;
-}
-
-label {
-  align-self: center;
-  font-size: 1.4rem;
-}
-
-/* submit button */
-.form_button {
-  grid-row: 5/5;
-  grid-column: 2/2;
-  align-self: center;
-  justify-self: center;
-  width: auto;
-  border-radius: 5px;
-}
-
-/* container for JavaScript form validation status */
-.formCheck {
-  display: flex;
-  flex-direction: row;
-}
-
-/* validation icons */
-.failed,
-.passed {
-  padding: 0.2rem;
-  height: auto;
-  width: 1.5vw;
-  position: absolute;
-  display: none;
-}
-
-.errorMessage {
-  padding: 2rem;
-}
-
-
 .copyright {
-  margin: 1rem 0 2rem;
+ /* margin: 1rem 0 2rem; */
+
+  display: flex;
+  margin: -2rem auto 0;
+  justify-content: center;
 }
 
 /*** 
@@ -629,37 +553,6 @@ responsive behaviour
   .contactbox {
     padding: 1.5vw;
     width: 72vw;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  input {
-    height: 8vh;
-    width: 60vw;
-  }
-
-  textarea {
-    height: 15vh;
-    width: 60vw;
-  }
-
-  .formCheck {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .failed,
-  .passed {
-    position: static;
-    width: 5vw;
-  }
-
-  .errorMessage {
-    padding: 0.4rem 0 1rem;
   }
 
 }
