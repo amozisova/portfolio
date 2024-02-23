@@ -21,7 +21,7 @@ https://github.com/amozisova/portfolio/blob/main/img/projects/portfolio.png
 ### About development
 I used Figma to sketch the layout and the design.
 
-Once the prototype was completed, I started coding the index.php - creating the layout and structure the website, section by section.
+Once the prototype was completed, I started coding the index page - creating the layout and structure the website, section by section.
 
 I then started styling the overall layout, using css grid. And then styling the elements. I continued section by section.
 
