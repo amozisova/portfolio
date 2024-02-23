@@ -16,7 +16,6 @@ https://github.com/amozisova/portfolio/blob/main/img/projects/portfolio.png
 ### Built with
 - HTML5
 - CSS3
-- PHP
 - JavaScript
 
 ### About development
