@@ -1,7 +1,3 @@
-<?php
-require_once 'email.php';
-?>
-
 <!DOCTYPE html>
 <html lang="cs-cz">
 
@@ -18,6 +14,7 @@ require_once 'email.php';
 </head>
 
 <body>
+<div class="content-wrapper">
     <div class="container" id="home">
         <nav class="navbar">
             <div class="nav_home">
@@ -67,7 +64,7 @@ require_once 'email.php';
                     <div class="contactIcons">
                         <a href="mailto:amozisova@gmail.com"><img src="img/icons/message.png" alt="message icon"></a>
                         <a href="https://github.com/amozisova" target="_blank"><img src="img/icons/github.png" alt="GitHub icon"></a>
-                        <a href="http://www.linkedin.com/in/mozisa" target="_blank"><img src="img/icons/linkedin-logo.png" alt="LinkedIn icon"></a>
+                        <a href="https://www.linkedin.com/in/mozisa" target="_blank"><img src="img/icons/linkedin-logo.png" alt="LinkedIn icon"></a>
                     </div>
                 </div>
 
@@ -344,70 +341,25 @@ require_once 'email.php';
                 <h1>Kontakt</h1>
             </header>
             <div class="contacts_wrapper">
-
+                <div class="contact_form_wrapper ">
+                    <header class="contact_title">
+                        <h3>Kontaktujte mě:</h3>
+                    </header>
+                </div>
                 <nav class="contactIcons">
                     <a href="mailto:amozisova@gmail.com"><img src="img/icons/message.png" alt="message icon"></a>
                     <a href="https://github.com/amozisova" target="_blank"><img src="img/icons/github.png" alt="GitHub icon"></a>
-                    <a href="http://www.linkedin.com/in/mozisa" target="_blank"><img src="img/icons/linkedin-logo.png" alt="LinkedIn icon"></a>
+                    <a href="https://www.linkedin.com/in/mozisa" target="_blank"><img src="img/icons/linkedin-logo.png" alt="LinkedIn icon"></a>
                 </nav>
-                <div class="contact_form_wrapper ">
-                    <header class="contact_title">
-                        <h3>Zanechte mi zprávu</h3>
-                    </header>
-                    <!-- displays form validation status from email.php -->
-                    <div class="php_formStatus" id="status">
-                        <?php echo $formStatus ? $formStatus : ''; ?>
-                    </div>
-
-                    <div class="contactbox">
-
-                        <form method="POST" action="email.php" id="contact-form">
-
-                            <label for="name">Vaše jméno:</label>
-                            <input type="text" id="name" name="name">
-                            <div class="formCheck">
-                                <img src="img/icons/error.png" class="failed">
-                                <img src="img/icons/check.png" class="passed">
-                                <div class="errorMessage"></div>
-                            </div>
-
-                            <label for="email">Váš e-mail:</label>
-                            <input type="email" id="email" name="email">
-                            <div class="formCheck">
-                                <img src="img/icons/error.png" class="failed">
-                                <img src="img/icons/check.png" class="passed">
-                                <div class="errorMessage"></div>
-                            </div>
-
-                            <label for="subject">Předmět:</label>
-                            <input type="text" id="subject" name="subject">
-                            <div class="formCheck">
-                                <img src="img/icons/error.png" class="failed">
-                                <img src="img/icons/check.png" class="passed">
-                                <div class="errorMessage"></div>
-                            </div>
-
-                            <label for="message">Vaše zpráva:</label>
-                            <textarea id="message" name="message" rows="8" cols="50"></textarea>
-                            <div class="formCheck">
-                                <img src="img/icons/error.png" class="failed">
-                                <img src="img/icons/check.png" class="passed">
-                                <div class="errorMessage"></div>
-                            </div>
-
-                            <button type="submit" class="form_button tab-button">Odeslat</button>
-
-                        </form>
-                    </div>
-                </div>
-                <footer class="copyright">
-                    ©2022-2024 |
-                    <a href="https://www.mozisa.eu">Alžběta Možíšová</a>
-                </footer>
             </div>
-
         </section>
     </div>
+
+
+    <footer class="copyright">
+        ©2022-2024 |&nbsp <a href="https://www.mozisa.eu">Alžběta Možíšová</a>
+    </footer>
+</div>
 
     <script src="js/script.js"></script>
 </body>
